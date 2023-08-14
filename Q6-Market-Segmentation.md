@@ -74,7 +74,7 @@ library(Rtsne)
     ## Warning: package 'Rtsne' was built under R version 4.0.5
 
 ``` r
-marketSegmentation = read.csv("C:/Users/kkart/OneDrive/McCombsMSBA/Intro to ML/New folder/STA380/STA380-master/data/social_marketing.csv")
+marketSegmentation = read.csv("social_marketing.csv")
 ```
 
 \#Data Processing:
@@ -143,6 +143,7 @@ ggplot(tsneData, aes(x = TSNE_1, y = TSNE_2)) +
 ```
 
 ![](Q6-Market-Segmentation_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+
 We observe multiple small clusters spread out in floral shape.
 
 Identify optimal number of clusters in K means++ using elbow method:
@@ -163,6 +164,7 @@ ggplot(data.frame(k = 1:15, wss = wss), aes(x = k, y = wss)) +
 ```
 
 ![](Q6-Market-Segmentation_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
 Picking k = 7 as optimal number of cluster to cluster and visualing
 
 ``` r
@@ -257,17 +259,10 @@ write.csv(clusterProfiles, "clusterProfilesk71.csv", row.names = FALSE)
 **Brief summary of each of these profiles based on their median
 values:**
 
-- Cluster 1: Comprised of sports enthusiasts who actively discuss their
-  fandom and share religious beliefs.
-- Cluster 2: Dominated by social interaction, with users sharing photos
-  and travel experiences.
-- Cluster 3: Represents entertainment lovers with interests in TV,
-  films, and food.
-- Cluster 4: Health-focused group that discusses nutrition and personal
-  fitness.
-- Cluster 5: Politically engaged segment that follows news and political
-  events.
-- Cluster 6: Home chefs and fashion enthusiasts, with a penchant for
-  sharing photos.
-- Cluster 7: College students and online gamers engaging in casual
-  online chatter.
+- Cluster 1: Socially engaged users who frequently engage in chatter, share photos, and discuss travel.
+- Cluster 2: Health-conscious individuals with interests in nutrition and personal fitness.
+- Cluster 3: College students and online gamers who engage in online gaming and casual chatter.
+- Cluster 4: Home chefs and fashion enthusiasts who love cooking and sharing photos.
+- Cluster 5: Politically active users with strong opinions on politics and news.
+- Cluster 6: Entertainment-focused audience with a love for TV, films, and photos.
+- Cluster 7: Sports lovers who also engage in religious discussions.
