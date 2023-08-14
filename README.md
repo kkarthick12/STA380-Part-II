@@ -1,6 +1,4 @@
 # STA380-Part-II
-
-# STA380-Part-II
 ​
 ## Team
 1. Karthick Vel
