@@ -7,10 +7,10 @@
 4. Aneerudh Ravishankar
 ​
 ## Table of contents
-1. [Introduction](#Introduction)
-2. [Questions](#Questions)
-3. [Overview](#Overview)
-4. [Data](#Data)
+1. [Introduction](#1-introduction)
+2. [Questions](#2-questions)
+3. [Overview](#3-overview)
+4. [Data](#4-data)
 ​
 ## 1. Introduction 
 In our "Introduction to Machine Learning" assignment, we have undertaken a comprehensive examination of the fundamental aspects of ML. This exploration spans the foundational principles of probability, advanced data wrangling techniques, the art of visual storytelling, methodologies in clustering and topic modeling, and the intricacies of neural networks. We invite you to delve into our repository for a detailed analysis and insights.
@@ -27,7 +27,7 @@ In our "Introduction to Machine Learning" assignment, we have undertaken a compr
 - Q9. Image classification with neural networks
 ​
 ## 3. Overview
-### [Probability practice](https://github.com/kkarthick12/STA380-Part-II/blob/main/Q2-Data-Wrangling.md)
+### [Probability practice](https://github.com/kkarthick12/STA380-Part-II/blob/main/Q1-Probability.ipynb)
 ​
 **Description:** 
 - For our analysis, we employed the Rule of Total Probability to deduce the fraction of truthful clickers responding "yes" in a website survey scenario (Part A). Subsequently, we harnessed Bayes' Theorem to assess the likelihood of a disease presence given a positive test result, considering both the test's sensitivity and the disease's prevalence (Part B).
@@ -87,3 +87,4 @@ In our "Introduction to Machine Learning" assignment, we have undertaken a compr
 **Conclusions/Results:**
 ​
 ## 4. Data
+Created a seperate data directory to accommodate essential data files necessary for conducting the analysis.
