@@ -54,7 +54,7 @@ the same title.)
 **Solution:**
 
 ``` r
-billboard = read.csv("C:/Users/kkart/OneDrive/McCombsMSBA/Intro to ML/New folder/billboard.csv")
+billboard = read.csv("billboard.csv")
 
 billboard$X = NULL
 
