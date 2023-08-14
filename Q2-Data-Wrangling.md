@@ -1,4 +1,4 @@
-Untitled
+Q2. Wrangling the Billboard Top 100
 ================
 
 **Consider the data in billboard.csv containing every song to appear on
