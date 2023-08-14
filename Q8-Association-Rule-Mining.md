@@ -390,7 +390,7 @@ breakfast items or sandwiches.
 plot(rules, jitter =0)
 ```
 
-![](Q8_Association_Rule_Mining_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](Q8-Association-Rule-Mining_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 It can be observed that high lift rules tend to have low support. High
 lift rules with low support can provide valuable insights about specific
@@ -403,7 +403,7 @@ looking at high-support items.
 plot(rules, jitter = 0, measure = c("support", "lift"), shading = "confidence")
 ```
 
-![](Q8_Association_Rule_Mining_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](Q8-Association-Rule-Mining_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 **“Two key” plot: coloring is by size (order) of item set**
 
@@ -411,7 +411,7 @@ plot(rules, jitter = 0, measure = c("support", "lift"), shading = "confidence")
 plot(rules, method='two-key plot', jitter =0)
 ```
 
-![](Q8_Association_Rule_Mining_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](Q8-Association-Rule-Mining_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 **Pick your own thresholds for lift and confidence; just be clear what
 these thresholds are and say why you picked them**
