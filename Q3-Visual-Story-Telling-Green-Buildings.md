@@ -123,7 +123,7 @@ library(tidyr)
 ```
 
 ``` r
-greenBuildings = read.csv("C:/Users/kkart/OneDrive/McCombsMSBA/Intro to ML/New folder/greenbuildings.csv")
+greenBuildings = read.csv("greenbuildings.csv")
 ```
 
 ``` r
