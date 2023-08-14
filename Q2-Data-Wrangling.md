@@ -1,4 +1,4 @@
-Q2. Data Wrangling
+Untitled
 ================
 
 **Consider the data in billboard.csv containing every song to appear on
@@ -54,7 +54,7 @@ the same title.)
 **Solution:**
 
 ``` r
-billboard = read.csv("billboard.csv")
+billboard = read.csv("C:/Users/kkart/OneDrive/McCombsMSBA/Intro to ML/New folder/billboard.csv")
 
 billboard$X = NULL
 
