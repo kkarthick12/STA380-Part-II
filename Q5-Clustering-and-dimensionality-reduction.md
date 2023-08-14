@@ -50,7 +50,7 @@ library(Rtsne)
     ## Warning: package 'Rtsne' was built under R version 4.0.5
 
 ``` r
-wine = read.csv('C:/Users/kkart/OneDrive/McCombsMSBA/Intro to ML/New folder/STA380/STA380-master/data/wine.csv')
+wine = read.csv('wine.csv')
 
 wine = unique(wine)
 
@@ -77,7 +77,7 @@ ggplot(pcaDataColor, aes(x = PC1, y = PC2, color = color)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 **Question: ** Convince yourself (and me) that your chosen approach is
 easily capable of distinguishing the reds from the whites, using only
 the “unsupervised” information contained in the data on chemical
@@ -105,7 +105,7 @@ ggplot(pcaDataColor, aes(x = PC1, y = PC2, color = clusterColor)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ``` r
 pcaConfusionMatrix = table(pcaDataColor$color, pcaDataColor$clusterColor)
@@ -132,7 +132,7 @@ ggplot(tsneData, aes(x = TSNE_1, y = TSNE_2, color = color)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 Observation: t-SNE has a defined boundary compared with PCA
 
@@ -154,7 +154,7 @@ ggplot(tsneData, aes(x = TSNE_1, y = TSNE_2, color = clusterColor)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 tSNEColorConfusionMatrix = table(tsneData$color, tsneData$clusterColor)
@@ -185,7 +185,7 @@ ggplot(pcaDataQuality, aes(x = PC1, y = PC2, color = quality)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 Perform clustering on PCA to cluster quality
 
 ``` r
@@ -203,7 +203,7 @@ ggplot(pcaDataQuality, aes(x = PC1, y = PC2, color = clusterQuality)) +
   theme_minimal()
 ```
 
-![](Q4-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](Q5-Clustering-and-dimensionality-reduction_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 As we can see, the graph plotted before the above shows a dispersed
 plot, and the above clustered chart doesn’t show the same.
