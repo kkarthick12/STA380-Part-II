@@ -252,9 +252,6 @@ as.data.frame(clusterProfiles)
     ## 6      0                0       0              1     0
     ## 7      1                0       0              0     0
 
-``` r
-write.csv(clusterProfiles, "clusterProfilesk71.csv", row.names = FALSE)
-```
 
 **Brief summary of each of these profiles based on their median
 values:**
